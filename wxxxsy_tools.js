@@ -19,6 +19,7 @@ elcsgame.top
 https:\/\/elcsgame\.top\/iosgame\/index\.php url script-response-body https://raw.githubusercontent.com/ParfoisMeng/QuanX_Test/master/wxxxsy.js
 */
 
+console.log("$response="+$response);
 let obj = parseInt(document.body.textContent);
 
 if (obj % 2 == 0) {
