@@ -16,10 +16,13 @@ elcsgame.top
 
 [rewrite_local](注意路径）
 #wxxxsy_tools
-https:\/\/elcsgame\.top\/iosgame\/index\.php url script-response-body https://raw.githubusercontent.com/ParfoisMeng/QuanX_Test/master/wxxxsy_tools.js
+https:\/\/elcsgame\.top\/iosgame\/index\.php url script-response-body https://raw.githubusercontent.com/ParfoisMeng/QuanX_Test/master/wxxxsy.js
 */
 
+console.log($response.body);
 let obj = $response.body;
+console.log(obj);
+console.log(JSON.parse($response.body));
 
 if (obj % 2 == 0) {
     obj = obj + 200000000;
