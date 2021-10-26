@@ -19,10 +19,10 @@ elcsgame.top
 https:\/\/elcsgame\.top\/iosgame\/index\.php url script-response-body https://raw.githubusercontent.com/ParfoisMeng/QuanX_Test/master/wxxxsy.js
 */
 
-let obj=JSON.parse($response.body);
+let obj = $response.body;
 
 if (obj % 2 == 0) {
-    obj=obj+200000000;
+    obj = obj + 200000000;
 }
 
-$done({body: JSON.stringify(obj)})
+$done({body: obj})
