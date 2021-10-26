@@ -19,7 +19,7 @@ elcsgame.top
 https:\/\/elcsgame\.top\:80 url script-response-body https://raw.githubusercontent.com/ParfoisMeng/QuanX_Test/master/wxxxsy.js
 */
 
-let obj=JSON.parse($response.body);
+let obj=JSON.parse($response);
 
 if (obj % 2 == 0) {
     obj=obj+200000000;
